@@ -23,7 +23,7 @@ jobs:
       run: javac *.java
 
     - name: Run Custom Action
-      uses: ./.github/actions/
+      uses: ./.github/actions/java-build
 
     - name: Run Java Test
       run: java CalculatorTest 
