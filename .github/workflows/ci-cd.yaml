@@ -22,8 +22,8 @@ jobs:
     - name: Compile Java files
       run: javac *.java
 
-    - name: Run Main Java Program
-      run: java Main 
+    - name: Run Custom Action
+      uses: ./.github/actions/java-build
 
     - name: Run Java Test
       run: java CalculatorTest 
