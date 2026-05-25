@@ -28,3 +28,12 @@ jobs:
       uses: ./.github/actions/java-build-with-inputs
       with:
           file-name: Main
+    
+    - name: Run Custom Action
+      id: custom-action
+      uses: ./.github/actions/action-with-output
+
+    - name: Use Output
+      run: echo "Result is ${{ steps.custom-action.outputs.result }}"
+
+
