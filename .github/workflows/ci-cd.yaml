@@ -25,6 +25,6 @@ jobs:
         file-name: CalculatorTest  
 
     - name: Run custom Java action
-      uses: ./.github/actions/java-runner
+      uses: ./.github/actions/java-build-with-inputs
       with:
           file-name: Main
